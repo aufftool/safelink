@@ -32,7 +32,7 @@
                   randindex = parseInt(randindex);
                 }
 //
-                resultgenerate = links[randindex] + "?o=" + aesCrypto.encrypt(convertstr(generateurl.val()),convertstr('root'));
+                resultgenerate = window.location + "?o=" + aesCrypto.encrypt(convertstr(generateurl.val()),convertstr('root'));
                 resulturl.val(resultgenerate);
               }else {
                 resulturl.val('No result!');
